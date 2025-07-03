@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PMFBY Demo Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PMFBY Farmer Registration (Demo)</h1>
+    <form id="pmfby-form">
+      <label for="farmerName">👤 Farmer Name</label>
+      <input type="text" id="farmerName" name="farmer_name" required />
+
+      <label for="aadhaarNumber">🆔 Aadhaar Number</label>
+      <input type="text" id="aadhaarNumber" name="aadhaar_number" required />
+
+      <label for="bankAccountNumber">🏦 Bank Account Number</label>
+      <input type="text" id="bankAccountNumber" name="bank_account" required />
+
+      <label for="stateSelection">🌍 State</label>
+      <select id="stateSelection" name="state" required>
+        <option value="">-- Select State --</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+      </select>
+
+      <label for="districtSelection">📍 District</label>
+      <select id="districtSelection" name="district" required>
+        <option value="">-- Select District --</option>
+        <option value="Raipur">Raipur</option>
+        <option value="Durg">Durg</option>
+      </select>
+
+      <label for="cropName">🌾 Crop Name</label>
+      <input type="text" id="cropName" name="crop_name" required />
+
+      <button type="submit" id="submitButton">✅ Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
